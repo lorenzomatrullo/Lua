@@ -1,0 +1,7 @@
+-- comment
+
+--[[
+    multiple
+    line
+    comment
+]]
