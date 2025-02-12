@@ -1,6 +1,5 @@
 # Lua Installation and Compilation Guide
 
-## Prerequisites
 To compile and run Lua files on Windows, follow these steps:
 
 ### 1. Download Required Files
