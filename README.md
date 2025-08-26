@@ -1,41 +1,34 @@
-# Lua Installation and Compilation Guide
+# Lua Setup (Windows)
 
-To compile and run Lua files on Windows, follow these steps:
+- Install Lua
+  - Binaries: download from `https://luabinaries.sourceforge.net/` and extract to `C:\lua` (ensure `C:\lua\bin` is on PATH)
+  - Or via package manager: `scoop install lua` or `choco install lua`
 
-### 1. Download Required Files
-- [Lua Dist](https://luadist.org/repository/)
-- [Lua Binaries](https://luabinaries.sourceforge.net/)
-
-### 2. Extract and Merge
-- Unzip both downloaded files.
-- Merge the contents into a single folder.
-
-### 3. Move to C:\ Directory
-- Drag and drop the merged folder into the `C:\` directory.
-
-### 4. Configure Environment Variables
-- Copy the path of the `bin` folder: `C:\lua\bin`
-- Add this path to the Windows environment variables:
-  1. Open **System Properties** (Win + R, type `sysdm.cpl`, and press Enter).
-  2. Navigate to the **Advanced** tab and click on **Environment Variables**.
-  3. Under **System Variables**, find and edit the `Path` variable.
-  4. Click **New**, paste `C:\lua\bin`, and save the changes.
-
-### 5. Verify Installation
-- Open **Command Prompt** and run:
+- Verify
   ```sh
-  lua
-  ```
-- If Lua is installed correctly, it should enter the interactive mode.
-
-### 6. Running Lua Files
-- Navigate to the directory containing your `.lua` file using:
-  ```sh
-  cd path\to\your\file
-  ```
-- Run your script with:
-  ```sh
-  lua yourfile.lua
+  lua -v
   ```
 
-You are now ready to develop and execute Lua scripts on your system!
+- Run a script
+  ```sh
+  lua path\to\script.lua
+  ```
+
+### Learning Path
+
+1. Basics
+- [Variables](libs/variables.lua)
+- [Escape Sequences](libs/escape_sequences.lua)
+
+2. Operators and expressions
+- [Math Functions](scripts/speedometer/speedometer-c.lua)
+
+3. Control flow
+- [If Statement](scripts/speedometer/speedometer-c.lua)
+
+4. Extras and practice utilities
+- [Random Numbers](scripts/car-command/cars-c.lua)
+
+## Practice Scripts (Suggested Order)
+- [Car Command (Random Car Spawner)](scripts/car-command/)
+- [Speedometer HUD](scripts/speedometer/)
