@@ -1,0 +1,38 @@
+.DS_Store
+Thumbs.db
+
+# Lua
+*.luac
+
+# Build and distribution directories
+build/
+dist/
+out/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Virtual environments and dependencies
+venv/
+.venv/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ / IDEA
+.idea/
+
+# Other editors
+.fleet/
+.history/
+
+# Node / general tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
